@@ -1,0 +1,366 @@
+<Solution>
+  <PropertyGroup Name="ccsbuilder" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="uiimg">
+          <PlistImageFolder Image="app_login.png" PListFile="app_login.plist" Name=".app_login_PList.Dir">
+            <PlistImageFile Name="account_button.png" Key="account_button.png" />
+            <PlistImageFile Name="account_login.png" Key="account_login.png" />
+            <PlistImageFile Name="account_mima.png" Key="account_mima.png" />
+            <PlistImageFile Name="account_qrmima.png" Key="account_qrmima.png" />
+            <PlistImageFile Name="account_reg.png" Key="account_reg.png" />
+            <PlistImageFile Name="account_shurukuang.png" Key="account_shurukuang.png" />
+            <PlistImageFile Name="account_small_button.png" Key="account_small_button.png" />
+            <PlistImageFile Name="account_yhum.png" Key="account_yhum.png" />
+            <PlistImageFile Name="account_zhanghao.png" Key="account_zhanghao.png" />
+            <PlistImageFile Name="account_zhuczh.png" Key="account_zhuczh.png" />
+            <PlistImageFile Name="login_pages_normal.png" Key="login_pages_normal.png" />
+            <PlistImageFile Name="login_pages_pressing.png" Key="login_pages_pressing.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="buid_panel.png" PListFile="buid_panel.plist" Name=".buid_panel_PList.Dir">
+            <PlistImageFile Name="bg_property_copper.png" Key="bg_property_copper.png" />
+            <PlistImageFile Name="bg_property_golden.png" Key="bg_property_golden.png" />
+            <PlistImageFile Name="bg_property_silvery.png" Key="bg_property_silvery.png" />
+            <PlistImageFile Name="icon_big_lock.png" Key="icon_big_lock.png" />
+            <PlistImageFile Name="bg_property_blank.png" Key="bg_property_blank.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="general_ui.png" PListFile="general_ui.plist" Name=".general_ui_PList.Dir">
+            <PlistImageFile Name="arrow_big_green.png" Key="arrow_big_green.png" />
+            <PlistImageFile Name="bar_entity_bg.png" Key="bar_entity_bg.png" />
+            <PlistImageFile Name="bar_entity_hp.png" Key="bar_entity_hp.png" />
+            <PlistImageFile Name="bar_entity_mp.png" Key="bar_entity_mp.png" />
+            <PlistImageFile Name="bar_hp_front.png" Key="bar_hp_front.png" />
+            <PlistImageFile Name="bar_mp_front.png" Key="bar_mp_front.png" />
+            <PlistImageFile Name="battle_crit_text.png" Key="battle_crit_text.png" />
+            <PlistImageFile Name="battle_miss_text.png" Key="battle_miss_text.png" />
+            <PlistImageFile Name="bg_box.png" Key="bg_box.png" />
+            <PlistImageFile Name="bg_curpalyer_panel.png" Key="bg_curpalyer_panel.png" />
+            <PlistImageFile Name="bg_frame_1.png" Key="bg_frame_1.png" />
+            <PlistImageFile Name="bg_frame_2.png" Key="bg_frame_2.png" />
+            <PlistImageFile Name="bg_frame_3.png" Key="bg_frame_3.png" />
+            <PlistImageFile Name="bg_frame_4.png" Key="bg_frame_4.png" />
+            <PlistImageFile Name="bg_input_box.png" Key="bg_input_box.png" />
+            <PlistImageFile Name="bg_monster_panel.png" Key="bg_monster_panel.png" />
+            <PlistImageFile Name="bg_player_panel.png" Key="bg_player_panel.png" />
+            <PlistImageFile Name="bg_plot_panel.png" Key="bg_plot_panel.png" />
+            <PlistImageFile Name="bg_underframe_1.png" Key="bg_underframe_1.png" />
+            <PlistImageFile Name="bg_underframe_2.png" Key="bg_underframe_2.png" />
+            <PlistImageFile Name="bg_underframe_3.png" Key="bg_underframe_3.png" />
+            <PlistImageFile Name="bg_underframe_4.png" Key="bg_underframe_4.png" />
+            <PlistImageFile Name="box_select.png" Key="box_select.png" />
+            <PlistImageFile Name="btn_auto_fight.png" Key="btn_auto_fight.png" />
+            <PlistImageFile Name="btn_blue_glass.png" Key="btn_blue_glass.png" />
+            <PlistImageFile Name="btn_blue_long_glass.png" Key="btn_blue_long_glass.png" />
+            <PlistImageFile Name="btn_circle_back.png" Key="btn_circle_back.png" />
+            <PlistImageFile Name="btn_circle_close.png" Key="btn_circle_close.png" />
+            <PlistImageFile Name="btn_circle_help.png" Key="btn_circle_help.png" />
+            <PlistImageFile Name="btn_gray_glass.png" Key="btn_gray_glass.png" />
+            <PlistImageFile Name="btn_gray_long_glass.png" Key="btn_gray_long_glass.png" />
+            <PlistImageFile Name="btn_map.png" Key="btn_map.png" />
+            <PlistImageFile Name="btn_red_glass.png" Key="btn_red_glass.png" />
+            <PlistImageFile Name="btn_red_long_glass.png" Key="btn_red_long_glass.png" />
+            <PlistImageFile Name="btn_return.png" Key="btn_return.png" />
+            <PlistImageFile Name="btn_yellow_glass.png" Key="btn_yellow_glass.png" />
+            <PlistImageFile Name="btn_yellow_long_glass.png" Key="btn_yellow_long_glass.png" />
+            <PlistImageFile Name="chat_enter_btn.png" Key="chat_enter_btn.png" />
+            <PlistImageFile Name="chat_face_btn.png" Key="chat_face_btn.png" />
+            <PlistImageFile Name="chat_input_bg.png" Key="chat_input_bg.png" />
+            <PlistImageFile Name="chat_panel_bg.png" Key="chat_panel_bg.png" />
+            <PlistImageFile Name="chat_sendbtn_bg.png" Key="chat_sendbtn_bg.png" />
+            <PlistImageFile Name="color_black.png" Key="color_black.png" />
+            <PlistImageFile Name="color_gray.png" Key="color_gray.png" />
+            <PlistImageFile Name="color_transparent.png" Key="color_transparent.png" />
+            <PlistImageFile Name="combo_bg.png" Key="combo_bg.png" />
+            <PlistImageFile Name="combo_text.png" Key="combo_text.png" />
+            <PlistImageFile Name="control_bg.png" Key="control_bg.png" />
+            <PlistImageFile Name="control_rocker.png" Key="control_rocker.png" />
+            <PlistImageFile Name="curplayer_halo.png" Key="curplayer_halo.png" />
+            <PlistImageFile Name="entity_shadow.png" Key="entity_shadow.png" />
+            <PlistImageFile Name="experience_bar.png" Key="experience_bar.png" />
+            <PlistImageFile Name="experience_front.png" Key="experience_front.png" />
+            <PlistImageFile Name="front_big_head.png" Key="front_big_head.png" />
+            <PlistImageFile Name="front_small_head.png" Key="front_small_head.png" />
+            <PlistImageFile Name="gesture_attack.png" Key="gesture_attack.png" />
+            <PlistImageFile Name="gesture_attack_focus.png" Key="gesture_attack_focus.png" />
+            <PlistImageFile Name="hp_bar_front.png" Key="hp_bar_front.png" />
+            <PlistImageFile Name="icon_goldbox.png" Key="icon_goldbox.png" />
+            <PlistImageFile Name="icon_player_point.png" Key="icon_player_point.png" />
+            <PlistImageFile Name="icon_task_gold_npc.png" Key="icon_task_gold_npc.png" />
+            <PlistImageFile Name="icon_task_green_npc.png" Key="icon_task_green_npc.png" />
+            <PlistImageFile Name="icon_tips_email.png" Key="icon_tips_email.png" />
+            <PlistImageFile Name="icon_tips_faction.png" Key="icon_tips_faction.png" />
+            <PlistImageFile Name="icon_tips_fight.png" Key="icon_tips_fight.png" />
+            <PlistImageFile Name="icon_tips_friend.png" Key="icon_tips_friend.png" />
+            <PlistImageFile Name="icon_tips_team.png" Key="icon_tips_team.png" />
+            <PlistImageFile Name="img_auto_fight.png" Key="img_auto_fight.png" />
+            <PlistImageFile Name="img_circle_load.png" Key="img_circle_load.png" />
+            <PlistImageFile Name="item_color_1.png" Key="item_color_1.png" />
+            <PlistImageFile Name="item_color_2.png" Key="item_color_2.png" />
+            <PlistImageFile Name="item_color_3.png" Key="item_color_3.png" />
+            <PlistImageFile Name="item_color_4.png" Key="item_color_4.png" />
+            <PlistImageFile Name="item_color_5.png" Key="item_color_5.png" />
+            <PlistImageFile Name="item_color_6.png" Key="item_color_6.png" />
+            <PlistImageFile Name="line_gold_small.png" Key="line_gold_small.png" />
+            <PlistImageFile Name="line_item_detail.png" Key="line_item_detail.png" />
+            <PlistImageFile Name="menu_bag.png" Key="menu_bag.png" />
+            <PlistImageFile Name="menu_faction.png" Key="menu_faction.png" />
+            <PlistImageFile Name="menu_friend.png" Key="menu_friend.png" />
+            <PlistImageFile Name="menu_role.png" Key="menu_role.png" />
+            <PlistImageFile Name="menu_setting.png" Key="menu_setting.png" />
+            <PlistImageFile Name="menu_shop.png" Key="menu_shop.png" />
+            <PlistImageFile Name="menu_skill.png" Key="menu_skill.png" />
+            <PlistImageFile Name="menu_strength.png" Key="menu_strength.png" />
+            <PlistImageFile Name="menu_task.png" Key="menu_task.png" />
+            <PlistImageFile Name="quick_tips_bg.png" Key="quick_tips_bg.png" />
+            <PlistImageFile Name="skill_icon_bg.png" Key="skill_icon_bg.png" />
+            <PlistImageFile Name="skill_icon_cd.png" Key="skill_icon_cd.png" />
+            <PlistImageFile Name="star_gold.png" Key="star_gold.png" />
+            <PlistImageFile Name="star_gray.png" Key="star_gray.png" />
+            <PlistImageFile Name="star_half_gold.png" Key="star_half_gold.png" />
+            <PlistImageFile Name="tabbtn_hnormal.png" Key="tabbtn_hnormal.png" />
+            <PlistImageFile Name="tabbtn_hselected.png" Key="tabbtn_hselected.png" />
+            <PlistImageFile Name="tabbtn_normal.png" Key="tabbtn_normal.png" />
+            <PlistImageFile Name="tabbtn_selected.png" Key="tabbtn_selected.png" />
+            <PlistImageFile Name="tick_red.png" Key="tick_red.png" />
+            <PlistImageFile Name="icon_tips_market.png" Key="icon_tips_market.png" />
+            <PlistImageFile Name="img_auto_fight_point.png" Key="img_auto_fight_point.png" />
+            <PlistImageFile Name="activity_challenge.png" Key="activity_challenge.png" />
+            <PlistImageFile Name="activity_domain.png" Key="activity_domain.png" />
+            <PlistImageFile Name="activity_fight.png" Key="activity_fight.png" />
+            <PlistImageFile Name="activity_myboss.png" Key="activity_myboss.png" />
+            <PlistImageFile Name="activity_ranking.png" Key="activity_ranking.png" />
+            <PlistImageFile Name="activity_teamboss.png" Key="activity_teamboss.png" />
+            <PlistImageFile Name="activity_worldboss.png" Key="activity_worldboss.png" />
+            <PlistImageFile Name="activity_pay.png" Key="activity_pay.png" />
+            <PlistImageFile Name="general_headvip_1.png" Key="general_headvip_1.png" />
+            <PlistImageFile Name="general_headvip_2.png" Key="general_headvip_2.png" />
+            <PlistImageFile Name="general_headvip_3.png" Key="general_headvip_3.png" />
+            <PlistImageFile Name="general_headvip_4.png" Key="general_headvip_4.png" />
+            <PlistImageFile Name="general_headvip_5.png" Key="general_headvip_5.png" />
+            <PlistImageFile Name="general_headvip_6.png" Key="general_headvip_6.png" />
+            <PlistImageFile Name="general_headvip_7.png" Key="general_headvip_7.png" />
+            <PlistImageFile Name="general_headvip_8.png" Key="general_headvip_8.png" />
+            <PlistImageFile Name="activity_lottery.png" Key="activity_lottery.png" />
+            <PlistImageFile Name="icon_job_1.png" Key="icon_job_1.png" />
+            <PlistImageFile Name="icon_job_2.png" Key="icon_job_2.png" />
+            <PlistImageFile Name="activity_market.png" Key="activity_market.png" />
+            <PlistImageFile Name="activity_federation.png" Key="activity_federation.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="role_panel.png" PListFile="role_panel.plist" Name=".role_panel_PList.Dir">
+            <PlistImageFile Name="bg_role_stand.png" Key="bg_role_stand.png" />
+            <PlistImageFile Name="role_bg.png" Key="role_bg.png" />
+            <PlistImageFile Name="role_divide_line.png" Key="role_divide_line.png" />
+            <PlistImageFile Name="role_info_bg.png" Key="role_info_bg.png" />
+            <PlistImageFile Name="role_row_point.png" Key="role_row_point.png" />
+            <PlistImageFile Name="slider_normal_btn.png" Key="slider_normal_btn.png" />
+            <PlistImageFile Name="slider_select_btn.png" Key="slider_select_btn.png" />
+            <PlistImageFile Name="icon_cao_coin.png" Key="icon_cao_coin.png" />
+            <PlistImageFile Name="bigwin_score_bg_1.png" Key="bigwin_score_bg_1.png" />
+            <PlistImageFile Name="bigwin_score_bg_2.png" Key="bigwin_score_bg_2.png" />
+            <PlistImageFile Name="bigwin_score_bg_3.png" Key="bigwin_score_bg_3.png" />
+            <PlistImageFile Name="bigwin_score_text_1.png" Key="bigwin_score_text_1.png" />
+            <PlistImageFile Name="bigwin_score_text_2.png" Key="bigwin_score_text_2.png" />
+            <PlistImageFile Name="bigwin_score_text_3.png" Key="bigwin_score_text_3.png" />
+            <PlistImageFile Name="icon_hp_bottle.png" Key="icon_hp_bottle.png" />
+            <PlistImageFile Name="icon_mp_bottle.png" Key="icon_mp_bottle.png" />
+            <PlistImageFile Name="chest_box_close.png" Key="chest_box_close.png" />
+            <PlistImageFile Name="chest_box_empty.png" Key="chest_box_empty.png" />
+            <PlistImageFile Name="chest_box_open.png" Key="chest_box_open.png" />
+            <PlistImageFile Name="icon_cristal.png" Key="icon_cristal.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="update_ui.png" PListFile="update_ui.plist" Name=".update_ui_PList.Dir">
+            <PlistImageFile Name="load_progress_bar.png" Key="load_progress_bar.png" />
+            <PlistImageFile Name="load_progress_bar_bg.png" Key="load_progress_bar_bg.png" />
+          </PlistImageFolder>
+          <Image Name="load_scene.png" />
+          <PlistImageFolder Image="fight_ui.png" PListFile="fight_ui.plist" Name=".fight_ui_PList.Dir">
+            <PlistImageFile Name="fight_btn_start.png" Key="fight_btn_start.png" />
+            <PlistImageFile Name="fight_text_KO.png" Key="fight_text_KO.png" />
+            <PlistImageFile Name="fight_text_VS.png" Key="fight_text_VS.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="domain_ui.png" PListFile="domain_ui.plist" Name=".domain_ui_PList.Dir">
+            <PlistImageFile Name="domain_1.png" Key="domain_1.png" />
+            <PlistImageFile Name="domain_2.png" Key="domain_2.png" />
+            <PlistImageFile Name="domain_3.png" Key="domain_3.png" />
+            <PlistImageFile Name="domain_4.png" Key="domain_4.png" />
+            <PlistImageFile Name="domain_5.png" Key="domain_5.png" />
+            <PlistImageFile Name="qiguozhi_map.png" Key="qiguozhi_map.png" />
+            <PlistImageFile Name="domain_fight_icon.png" Key="domain_fight_icon.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="battle_ui.png" PListFile="battle_ui.plist" Name=".battle_ui_PList.Dir">
+            <PlistImageFile Name="battle_start_1.png" Key="battle_start_1.png" />
+            <PlistImageFile Name="battle_start_2.png" Key="battle_start_2.png" />
+            <PlistImageFile Name="battle_start_3.png" Key="battle_start_3.png" />
+            <PlistImageFile Name="battle_start_go.png" Key="battle_start_go.png" />
+            <PlistImageFile Name="fight_fail.png" Key="fight_fail.png" />
+            <PlistImageFile Name="fight_win.png" Key="fight_win.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="vip_ui.png" PListFile="vip_ui.plist" Name=".vip_ui_PList.Dir">
+            <PlistImageFile Name="icon_sale_coin_1.png" Key="icon_sale_coin_1.png" />
+            <PlistImageFile Name="icon_sale_coin_2.png" Key="icon_sale_coin_2.png" />
+            <PlistImageFile Name="icon_sale_coin_3.png" Key="icon_sale_coin_3.png" />
+            <PlistImageFile Name="icon_sale_coin_4.png" Key="icon_sale_coin_4.png" />
+            <PlistImageFile Name="icon_sale_coin_5.png" Key="icon_sale_coin_5.png" />
+            <PlistImageFile Name="icon_sale_crystal_1.png" Key="icon_sale_crystal_1.png" />
+            <PlistImageFile Name="icon_sale_crystal_2.png" Key="icon_sale_crystal_2.png" />
+            <PlistImageFile Name="icon_sale_crystal_3.png" Key="icon_sale_crystal_3.png" />
+            <PlistImageFile Name="icon_sale_crystal_4.png" Key="icon_sale_crystal_4.png" />
+            <PlistImageFile Name="icon_sale_crystal_5.png" Key="icon_sale_crystal_5.png" />
+            <PlistImageFile Name="vip_logo.png" Key="vip_logo.png" />
+            <PlistImageFile Name="vip_num_00.png" Key="vip_num_00.png" />
+            <PlistImageFile Name="vip_num_01.png" Key="vip_num_01.png" />
+            <PlistImageFile Name="vip_num_02.png" Key="vip_num_02.png" />
+            <PlistImageFile Name="vip_num_03.png" Key="vip_num_03.png" />
+            <PlistImageFile Name="vip_num_04.png" Key="vip_num_04.png" />
+            <PlistImageFile Name="vip_num_05.png" Key="vip_num_05.png" />
+            <PlistImageFile Name="vip_num_06.png" Key="vip_num_06.png" />
+            <PlistImageFile Name="vip_num_07.png" Key="vip_num_07.png" />
+            <PlistImageFile Name="vip_num_08.png" Key="vip_num_08.png" />
+            <PlistImageFile Name="vip_num_09.png" Key="vip_num_09.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="selectscene.png" PListFile="selectscene.plist" Name=".selectscene_PList.Dir">
+            <PlistImageFile Name="btn_random.png" Key="btn_random.png" />
+            <PlistImageFile Name="enter_game_nbutton.png" Key="enter_game_nbutton.png" />
+            <PlistImageFile Name="enter_game_sbutton.png" Key="enter_game_sbutton.png" />
+            <PlistImageFile Name="select_scene_front_down.png" Key="select_scene_front_down.png" />
+            <PlistImageFile Name="select_scene_front_up.png" Key="select_scene_front_up.png" />
+            <PlistImageFile Name="text_create_role.png" Key="text_create_role.png" />
+          </PlistImageFolder>
+          <Image Name="select_scene.jpg" />
+        </Folder>
+        <Folder Name="uiccs">
+          <Project Name="AreaLayer.csd" Type="Node" />
+          <Project Name="TipsBoxLayer.csd" Type="Node" />
+          <Project Name="TeamLayer.csd" Type="Node" />
+          <Project Name="SkillInfoPanel.csd" Type="Node" />
+          <Project Name="SkillInfoLayer.csd" Type="Node" />
+          <Project Name="ShopPanel.csd" Type="Node" />
+          <Project Name="ShopLayer.csd" Type="Node" />
+          <Project Name="ShopItem.csd" Type="Node" />
+          <Project Name="SelectLayer.csd" Type="Node" />
+          <Project Name="RolePanel.csd" Type="Node" />
+          <Project Name="RoleLayer.csd" Type="Node" />
+          <Project Name="RoleInfoLayer.csd" Type="Node" />
+          <Project Name="PlotPanel.csd" Type="Node" />
+          <Project Name="PlayerMenuLayer.csd" Type="Node" />
+          <Project Name="PlayerLayer.csd" Type="Node" />
+          <Project Name="MapPanel.csd" Type="Node" />
+          <Project Name="MapLayer.csd" Type="Node" />
+          <Project Name="LoginLayer.csd" Type="Node" />
+          <Project Name="LoadingLayer.csd" Type="Node" />
+          <Project Name="ItemLayer.csd" Type="Node" />
+          <Project Name="EquipmentLayer.csd" Type="Node" />
+          <Project Name="ChatPanel.csd" Type="Node" />
+          <Project Name="BuildStrenghtLayer.csd" Type="Node" />
+          <Project Name="BuildPanel.csd" Type="Node" />
+          <Project Name="BuildInheritLayer.csd" Type="Node" />
+          <Project Name="BuildBagLayer.csd" Type="Node" />
+          <Project Name="BagPanel.csd" Type="Node" />
+          <Project Name="BagLayer.csd" Type="Node" />
+          <Project Name="FightPanel.csd" Type="Node" />
+          <Project Name="FightLayer.csd" Type="Node" />
+          <Project Name="SettingPanel.csd" Type="Node" />
+          <Project Name="SellPanel.csd" Type="Node" />
+          <Project Name="SellLayer.csd" Type="Node" />
+          <Project Name="FightSelectLayer.csd" Type="Node" />
+          <Project Name="ChallengePanel.csd" Type="Node" />
+          <Project Name="ChallengeLayer.csd" Type="Node" />
+          <Project Name="BuyLayer.csd" Type="Node" />
+          <Project Name="FederationPanel.csd" Type="Node" />
+          <Project Name="FedDonationLayer.csd" Type="Node" />
+          <Project Name="FedHallLayer.csd" Type="Node" />
+          <Project Name="FedVoteLayer.csd" Type="Node" />
+          <Project Name="GuildPanel.csd" Type="Node" />
+          <Project Name="FedGuildLayer.csd" Type="Node" />
+          <Project Name="GuildDetailLayer.csd" Type="Node" />
+          <Project Name="GuildHallLayer.csd" Type="Node" />
+          <Project Name="GuidBagLayer.csd" Type="Node" />
+          <Project Name="MarketPanel.csd" Type="Node" />
+          <Project Name="MarketLayer.csd" Type="Node" />
+          <Project Name="BossListLayer.csd" Type="Node" />
+          <Project Name="MarketTimePanel.csd" Type="Node" />
+          <Project Name="MarketTimeLayer.csd" Type="Node" />
+          <Project Name="GuildDomainLayer.csd" Type="Node" />
+          <Project Name="MyBossLayer.csd" Type="Node" />
+          <Project Name="BigWinLayer.csd" Type="Node" />
+          <Project Name="MarketItem.csd" Type="Node" />
+          <Project Name="MarketBuyLayer.csd" Type="Node" />
+          <Project Name="MarketMyLayer.csd" Type="Node" />
+          <Project Name="MarketBankLayer.csd" Type="Node" />
+          <Project Name="ItemSelectLayer.csd" Type="Node" />
+          <Project Name="MakeDrugLayer.csd" Type="Node" />
+          <Project Name="MarketDetailPanel.csd" Type="Node" />
+          <Project Name="MarketDetailLayer.csd" Type="Node" />
+          <Project Name="FedImpeachLayer.csd" Type="Node" />
+          <Project Name="FedElectionLayer.csd" Type="Node" />
+          <Project Name="GuildMemberLayer.csd" Type="Node" />
+          <Project Name="GuildMenuLayer.csd" Type="Node" />
+          <Project Name="GuildHallItem.csd" Type="Node" />
+          <Project Name="GuildMemberItem.csd" Type="Node" />
+          <Project Name="GuildDetailPanel.csd" Type="Node" />
+          <Project Name="UpdateScene.csd" Type="Node" />
+          <Project Name="WelcomeScene.csd" Type="Node" />
+          <Project Name="TransportPanel.csd" Type="Node" />
+          <Project Name="PlotTextPanel.csd" Type="Node" />
+          <Project Name="TaskPanel.csd" Type="Node" />
+          <Project Name="NewEquipmentLayer.csd" Type="Node" />
+          <Project Name="FruitSlotPanel.csd" Type="Node" />
+          <Project Name="NewFunctionLayer.csd" Type="Node" />
+          <Project Name="ReviveLayer.csd" Type="Node" />
+          <Project Name="GuildShareholderLayer.csd" Type="Node" />
+          <Project Name="GuildUpgradeLayer.csd" Type="Node" />
+          <Project Name="GuildSimpleLayer.csd" Type="Node" />
+          <Project Name="DomainPanel.csd" Type="Node" />
+          <Project Name="DomainLayer.csd" Type="Node" />
+          <Project Name="FightFailLayer.csd" Type="Node" />
+          <Project Name="FightWinLayer.csd" Type="Node" />
+          <Project Name="DomainDetailLayer.csd" Type="Node" />
+          <Project Name="SetGameLayer.csd" Type="Node" />
+          <Project Name="SetMusicLayer.csd" Type="Node" />
+          <Project Name="SetBugLayer.csd" Type="Node" />
+          <Project Name="SetAboutLayer.csd" Type="Node" />
+          <Project Name="MailLayer.csd" Type="Node" />
+          <Project Name="RankWorldLayer.csd" Type="Node" />
+          <Project Name="RankListPanel.csd" Type="Node" />
+          <Project Name="RankPlayerLayer.csd" Type="Node" />
+          <Project Name="RankWorldItem.csd" Type="Node" />
+          <Project Name="MyBossPanel.csd" Type="Node" />
+          <Project Name="MyBossItem.csd" Type="Node" />
+          <Project Name="HpMpLayer.csd" Type="Node" />
+          <Project Name="VipPanel.csd" Type="Node" />
+          <Project Name="VipGiftLayer.csd" Type="Node" />
+          <Project Name="VipBuyLayer.csd" Type="Node" />
+          <Project Name="VipCoinLayer.csd" Type="Node" />
+          <Project Name="ShopBuyItemLayer.csd" Type="Node" />
+          <Project Name="BuildRecycleLayer.csd" Type="Node" />
+          <Project Name="BossPanel.csd" Type="Node" />
+          <Project Name="BossMyLayer.csd" Type="Node" />
+          <Project Name="BossWorldLayer.csd" Type="Node" />
+        </Folder>
+        <Folder Name="fonts">
+          <Image Name="atlas_blue.png" />
+          <Image Name="atlas_depth_blue.png" />
+          <Image Name="atlas_gold.png" />
+          <Image Name="atlas_gray.png" />
+          <Image Name="atlas_green.png" />
+          <Image Name="atlas_he.png" />
+          <Image Name="atlas_number_grey_2.png" />
+          <Image Name="atlas_number_vip.png" />
+          <Image Name="atlas_white.png" />
+          <Image Name="atlas_yellow.png" />
+          <Image Name="combo_number.png" />
+          <Image Name="crit_hurt_number.png" />
+          <Image Name="mob_hurt_number.png" />
+          <Image Name="normal_hurt_number.png" />
+          <Image Name="stars.png" />
+        </Folder>
+        <Folder Name="particle">
+          <PlistParticleFile Name="bigwin_blowout_1.plist" />
+          <PlistParticleFile Name="bigwin_blowout_2.plist" />
+          <PlistParticleFile Name="bigwin_blowout_0.plist" />
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
