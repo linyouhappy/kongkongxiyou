@@ -1,0 +1,57 @@
+{
+  "name": "pomelo-cli",
+  "version": "0.1.3",
+  "description": "Pomelo command line client for managing pomelo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "pomelo",
+    "command",
+    "line",
+    "maintening"
+  ],
+  "bin": {
+    "pomelo-cli": "./bin/pomelo-cli"
+  },
+  "dependencies": {
+    "optimist": ">=0.6.0",
+    "cliff": ">=0.1.8",
+    "pomelo-admin": "0.4.x",
+    "pomelo-logger": ">=0.0.3",
+    "async": ">=0.1.0"
+  },
+  "author": {
+    "name": "fantasyni"
+  },
+  "license": "MIT",
+  "gitHead": "613502201b1b2355f3c3264cc3328baa2fc5ff59",
+  "_id": "pomelo-cli@0.1.3",
+  "_shasum": "c1cb5574d76c07f13408b889241e48937710dd1a",
+  "_from": "pomelo-cli@*",
+  "_npmVersion": "2.5.0",
+  "_nodeVersion": "0.10.28",
+  "_npmUser": {
+    "name": "fantasyni",
+    "email": "fantasyni@163.com"
+  },
+  "maintainers": [
+    {
+      "name": "fantasyni",
+      "email": "fantasyni@163.com"
+    },
+    {
+      "name": "py8765",
+      "email": "pengyang633@126.com"
+    }
+  ],
+  "dist": {
+    "shasum": "c1cb5574d76c07f13408b889241e48937710dd1a",
+    "tarball": "http://registry.npmjs.org/pomelo-cli/-/pomelo-cli-0.1.3.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/pomelo-cli/-/pomelo-cli-0.1.3.tgz",
+  "readme": "ERROR: No README data found!"
+}
