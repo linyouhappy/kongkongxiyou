@@ -1,0 +1,29 @@
+[{
+    "type": "connector",
+    "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rx"
+}, {
+    "type": "chat",
+    "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rx"
+},{
+    "type": "gate",
+    "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rx"
+},{
+    "type": "auth",
+    "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rx"
+},{
+    "type": "manager",
+    "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rx"
+},{
+    "type": "path",
+    "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rx"
+},{
+    "type": "area",
+    "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rx"
+},{
+    "type": "trade",
+    "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rx"
+},{
+    "type": "fight",
+    "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rx"
+}
+]

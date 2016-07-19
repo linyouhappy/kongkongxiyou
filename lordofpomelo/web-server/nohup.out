@@ -1,0 +1,52 @@
+Web server has started.
+ Please log on http://127.0.0.1:3001/
+Web server has started.
+ Please log on http://127.0.0.1:3001/
+/login msg:{"username":"linyou40","password":"123456"}
+linyou40 login!
+Web server has started.
+ Please log on http://127.0.0.1:3001/
+Web server has started.
+ Please log on http://127.0.0.1:3001/
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2033025" m="184e768e544d84461d09f89b1eefc985" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2781416" m="0d949e6415aa0b8ab6e380d8de477730" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2781416" m="0d949e6415aa0b8ab6e380d8de477730" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2781416" m="0d949e6415aa0b8ab6e380d8de477730" f="res1.ios" /></root>
+/login msg:{"username":"linyou40","password":"123456"}
+linyou40 login!
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2792887" m="a45c2685603318acdf086049fc74bd7f" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2792887" m="a45c2685603318acdf086049fc74bd7f" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2792898" m="3e7a1502d0b2b13e97401a3428cf74d5" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2792898" m="3e7a1502d0b2b13e97401a3428cf74d5" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2792898" m="3e7a1502d0b2b13e97401a3428cf74d5" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2792911" m="5fe89af6372d0278c5e509c3723281de" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2792872" m="00e418dca5017469f36a9743ba5dd654" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2792890" m="c555bd55b0902438325fbf5a43ac594e" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2792913" m="63c3a8b9a6527903f711385d834fc7be" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2792913" m="63c3a8b9a6527903f711385d834fc7be" f="res1.ios" /></root>
+appVer=1,resVer=1
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2792913" m="63c3a8b9a6527903f711385d834fc7be" f="res1.ios" /></root>
+appVer=1,resVer=1
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2029564" m="ca55d03f01fce7d1d8c11b6f6f6e1550" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2777957" m="41992c8ea866924f12b3f7e7ceb7fa79" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2777957" m="41992c8ea866924f12b3f7e7ceb7fa79" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2777957" m="41992c8ea866924f12b3f7e7ceb7fa79" f="res1.ios" /></root>
+appVer=1,resVer=2
+response=<?xml version="1.0" encoding="utf-8"?><root ver="1" force="0" url="http://192.168.199.242:3001/res" res="2" ><f t="file" s="2777957" m="41992c8ea866924f12b3f7e7ceb7fa79" f="res1.ios" /></root>

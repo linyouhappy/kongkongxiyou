@@ -1,0 +1,17 @@
+[{
+    "id": "user-1",
+    "username": "adminlinyou",
+    "password": "adminlinyou",
+    "level": 1
+}, {
+    "id": "user-2",
+    "username": "monitorlinyou",
+    "password": "monitorlinyou",
+    "level": 2
+},{
+    "id": "user-3",
+    "username": "testlinyou",
+    "password": "testlinyou",
+    "level": 2
+}
+]

@@ -1,0 +1,1 @@
+[["id","任务名","类别","等级","acceptArea","acceptNPC","finishArea","finishNPC","workArea","完成条件","任务描述","接受任务对话","任务进行","完成任务","经验","money","道具","时间"],["id","name","type","heroLevel","acceptArea","acceptNPC","finishArea","finishNPC","workArea","completeCondition","desc","acceptTalk","workTalk","finishTalk","exp","money","item","timeLimit"]]

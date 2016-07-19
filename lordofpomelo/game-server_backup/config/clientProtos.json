@@ -1,0 +1,17 @@
+{
+	"connector.entryHandler.entry": {
+		"required string token": 1
+	},
+
+	"connector.entryHandler.entryPlayer": {
+		"required uInt32 uid": 1,
+		"required uInt32 playerId": 2
+	},
+
+	"connector.roleHandler.createPlayer":{
+		"required string name": 1,
+		"required uInt32 uid": 2,
+		"required uInt32 kindId": 3
+	}
+
+}

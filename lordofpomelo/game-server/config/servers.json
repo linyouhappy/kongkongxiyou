@@ -1,0 +1,77 @@
+{
+	"development": {
+		"connector": [{
+			"id": "connector-server-1",
+			"host": "127.0.0.1",
+			"port": 3150,
+			"clientPort": 3010,
+			"frontend": true
+		}],
+		"area": [{
+			"id": "area-server",
+			"host": "127.0.0.1",
+			"port": 3270,
+			"areas": "[1001,2003,3001,3002,3003,3004,3005,6001,6002,6003,6004,6005]",
+			"area": 0
+		}],
+		"auth": [{
+			"id": "auth-server-1",
+			"host": "127.0.0.1",
+			"port": 3650
+		}],
+		"gate": [{
+			"id": "gate-server-1",
+			"host": "127.0.0.1",
+			"clientPort": 3014,
+			"frontend": true
+		}],
+		"manager": [{
+			"id": "manager-server-1",
+			"host": "127.0.0.1",
+			"port": 3750
+		}],
+		"trade": [{
+			"id": "trade-server-1",
+			"host": "127.0.0.1",
+			"port": 3850
+		}]
+	},
+
+	"production": {
+		"connector": [{
+			"id": "connector-server-1",
+			"host": "127.0.0.1",
+			"port": 3150,
+			"clientPort": 3010,
+			"frontend": true
+		}],
+		"area": [{
+			"id": "area-server",
+			"host": "127.0.0.1",
+			"port": 3270,
+			"areas": "[1001,2003,3001,3002,3003,3004,3005,6001,6002,6003,6004,6005]",
+			"area": 0
+		}],
+		"auth": [{
+			"id": "auth-server-1",
+			"host": "127.0.0.1",
+			"port": 3650
+		}],
+		"gate": [{
+			"id": "gate-server-1",
+			"host": "127.0.0.1",
+			"clientPort": 3014,
+			"frontend": true
+		}],
+		"manager": [{
+			"id": "manager-server-1",
+			"host": "127.0.0.1",
+			"port": 3750
+		}],
+		"trade": [{
+			"id": "trade-server-1",
+			"host": "127.0.0.1",
+			"port": 3850
+		}]
+	}
+}

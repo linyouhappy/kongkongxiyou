@@ -1,0 +1,19 @@
+{
+  "connector.entryHandler.entry": {
+    "required uInt32 code" : 1,
+    "optional uInt32 uid" : 2,
+    "optional uInt32 time" : 3,
+    "optional uInt32 kindId" : 4,
+    "message Player": {
+      "required uInt32 playerId" : 1,
+      "required uInt32 kindId" : 2,
+      "required uInt32 level" : 3,
+      "required string name" : 4
+    },
+    "repeated Player players" : 5
+  },
+
+  "connector.entryHandler.entryPlayer": {
+    "required uInt32 code": 1
+  }
+}

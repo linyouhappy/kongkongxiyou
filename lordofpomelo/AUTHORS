@@ -1,0 +1,32 @@
+* Charlie Edward <xieccy@gmail.com> <twitter:@xiecc> <weibo:@圈圈套圈圈> <github:xiecc>
+* piaohai <yaopiaohai@corp.netease.com> <twitter:@piaohai> <weibo:@飘Hai> <github:piaohai>
+  Focus on OpenSource and Performance
+
+* numbcoder <wzhao23@gmail.com> <twitter: @numbcoder> <weibo: @Seekr> <github: numbcoder>
+
+* halfblood <halfblood369@gmail.com> <twitter: @halfblo97338394> <weibo: @衣兜里的东西> <github: halfblood369>
+
+
+{"id": "connector-server-2", "host": "127.0.0.1", "port": 3151, "clientPort": 3011, "frontend": true,"nostart":true}
+
+{"id": "area-server-1001", "host": "127.0.0.1", "port": 3271, "area": 1001,"nostart":true},
+			{"id": "area-server-2001", "host": "127.0.0.1", "port": 3275, "area": 2001,"nostart":true},
+			{"id": "area-server-2003", "host": "127.0.0.1", "port": 3277, "area": 2003,"nostart":true},
+
+			{"id": "area-server-3001", "host": "127.0.0.1", "port": 3251, "area": 3001,"nostart":true},
+			{"id": "area-server-3002", "host": "127.0.0.1", "port": 3252, "area": 3002,"nostart":true},
+			{"id": "area-server-3003", "host": "127.0.0.1", "port": 3253, "area": 3003,"nostart":true},
+			{"id": "area-server-3004", "host": "127.0.0.1", "port": 3254, "area": 3004,"nostart":true},
+			{"id": "area-server-3005", "host": "127.0.0.1", "port": 3255, "area": 3005,"nostart":true},
+
+			{"id": "instance-server-1", "host": "127.0.0.1", "port": 3260, "instance": true ,"nostart":true},
+			{"id": "instance-server-2", "host": "127.0.0.1", "port": 3261, "instance": true,"nostart":true},
+			{"id": "instance-server-3", "host": "127.0.0.1", "port": 3262, "instance": true,"nostart":true}
+
+
+"chat": [
+			{"id":"chat-server-1","host":"127.0.0.1","port":3450,"nostart":true}
+		],
+		"fight": [
+			{"id":"fight-server-1","host":"127.0.0.1","port":3860,"nostart":true}
+		]
