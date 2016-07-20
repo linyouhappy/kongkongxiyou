@@ -1,0 +1,43 @@
+<UserData Version="2.3.2.3">
+  <Properties>
+    <Item Key="CocosRecentOperation">
+      <Value ctype="CocosRecentOperation">
+        <LastPublishType Value="Resource" />
+        <IsLastPublish Value="True" />
+        <LastRunType Value="Mac" />
+      </Value>
+    </Item>
+    <Item Key="PackageParamsKey">
+      <Value ctype="PackageParams">
+        <LuaIsEncrypt Value="False" />
+        <LuaEncryptKey Value="" />
+        <LuaEncryptSign Value="" />
+        <Android_PackageName Value="org.cocos.ccsbuilder" />
+        <AndroidkeyStore Value="" />
+        <AndroidVersion Value="android-20" />
+        <iOS_Target Value="ccsbuilder iOS" />
+        <iOS_BundleID Value="iPhone Developer: nini li (Y3YH4VS43M)" />
+        <Platform Value="None" />
+        <RunPlatform Value="None" />
+        <FrameworkVersion Value="cocos2d-x-3.8" />
+        <IsDebugKeystore Value="True" />
+        <KeystorePassword Value="" />
+        <KeystoreAliasName Value="" />
+        <KeystoreAliasPassword Value="" />
+        <EnableSourceMap Value="False" />
+        <EnableHTML5Advanced Value="False" />
+      </Value>
+    </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="AreaNode.csd" />
+          <FilePathData Path="EditorNode.csd" />
+          <FilePathData Path="EntityNode.csd" />
+          <FilePathData Path="CollisionNode.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="EntityNode.csd" />
+      </Value>
+    </Item>
+  </Properties>
+</UserData>
