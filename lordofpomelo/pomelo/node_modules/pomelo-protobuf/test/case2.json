@@ -1,0 +1,11 @@
+{
+	"ls": {
+		"message MS": {
+			"optional Status status": 2,
+			"message Status": {
+				"repeated int32 table_cards": 13
+			}
+		},
+		"required MS s": 1
+	}
+}

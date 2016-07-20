@@ -1,0 +1,112 @@
+{
+
+    "lv":{
+        "message LevelUpMessage": {
+            "required string userid" : 1,
+            "required int32 delta_xp" : 2,
+            "required int32 level" : 3,
+            "required int32 level_up" : 4
+        },
+        "repeated LevelUpMessage s" : 1
+    },
+    "ls": {
+        "message MS": {
+            "repeated Event events" : 1,
+            "optional Status status" : 2,
+            "message Status": {
+                "required int32 status" : 1,
+                "required int32 max_player" : 2,
+                "required int32 big_blind" : 3,
+                "required int32 max_cash" : 4,
+                "required int32 buy_in" : 5,
+                "required int32 is_sit_and_go" : 6,
+                "required int32 dealerindex" : 7,
+                "required int32 index" : 8,
+                "required int32 turnNumber" : 9,
+                "required int32 bet" : 10,
+                "required int32 min_bet" : 11,
+                "required int32 this_turn_start_index" : 12,
+                "repeated int32 table_cards" : 13,
+                "required int32 potindex" : 14,
+                "repeated Pot pots" : 15,
+                "repeated Player userdec" : 16,
+                "required int32 animation_time" : 17,
+                "required int32 speed" : 18,
+
+                "message Pot": {
+                    "required int32 cash" : 1,
+                    "repeated Winner winner" : 2,
+                    "required int32 userinpot" : 3,
+                    "message Winner": {
+                        "optional string userid" : 6,
+                        "optional int32 hand" : 7,
+                        "repeated int32 pokers" : 8
+                    }
+                },
+                "message Player": {
+                    "optional string userid" : 1,
+                    "optional string username" : 2,
+                    "optional int32 isstandup" : 3,
+                    "optional int32 level" : 4,
+                    "optional int32 canplay" : 5,
+                    "optional int32 isplay" : 6,
+                    "required int32 is_on_table" : 7,
+                    "optional int32 isallin" : 8,
+                    "optional int32 card1" : 9,
+                    "optional int32 card2" : 10,
+                    "optional int32 turn" : 11,
+                    "optional int32 bet" : 12,
+                    "optional int32 money" : 13,
+                    "optional int32 chair_index" : 14,
+                    "optional int32 avatar_index" : 15,
+                    "optional int32 chipcount" : 16,
+                    "optional int32 action" : 17,
+                    "optional int32 gift" : 18
+
+                }
+            },
+            "message Event": {
+                "optional int32 id" : 1,
+                "optional Player1 user" : 2,
+                "optional int32 chair_index" : 3,
+                "repeated Bet bet" : 4,
+                "optional int32 small_bet" : 5,
+                "optional string user_id" : 6,
+                "optional int32 card1" : 7,
+                "optional int32 card2" : 8,
+                "optional int32 rank" : 9,
+                "optional int32 chips" : 10,
+                "repeated string showhand" : 11,
+                "optional string friendid" : 12,
+                "optional int32 giftid" : 13,
+
+                "message Player1": {
+                    "required string userid" : 1,
+                    "required string username" : 2,
+                    "required int32 isstandup" : 3,
+                    "required int32 level" : 4,
+                    "required int32 canplay" : 5,
+                    "required int32 isplay" : 6,
+                    "required int32 is_on_table" : 7,
+                    "required int32 isallin" : 8,
+                    "required int32 card1" : 9,
+                    "required int32 card2" : 10,
+                    "required int32 turn" : 11,
+                    "required int32 bet" : 12,
+                    "required int32 money" : 13,
+                    "required int32 chair_index" : 14,
+                    "required int32 avatar_index" : 15,
+                    "required int32 chipcount" : 16,
+                    "required int32 action" : 17,
+                    "optional int32 gift" : 18
+                },
+                "message Bet": {
+                    "required int32 chair_index" : 1,
+                    "required int32 bet" : 2
+                }
+            }
+        },
+        "required MS s" : 1
+    }
+}
+

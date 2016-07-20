@@ -1,0 +1,86 @@
+node-bignumber
+===============
+
+A pure JavaScript implementation of large-integer math, capable of performing useful-sized (512-bit, 1024-bit) 
+RSA encryption. Packaged to also be used in a node environment. 
+
+This library is a packaging of the original code from Tom Wu. The original files are available in the
+original/ folder or on his [site](http://www-cs-students.stanford.edu/~tjw/jsbn/).
+
+Updated for the 1.2 release as well as the 1.3 release of [jsrsasign](https://github.com/kjur/jsrsasign).
+
+This Fork
+---------
+Native Node hashing algorithms are used in place of the original pure JavaScript ones.
+Buffers are used as input and output instead of strings.  Still need to convert to Buffers all the way through.
+
+Install
+-------
+
+Using NPM, installing is as easy as:
+    npm install node-bignumber
+
+Usage
+-----
+
+For help on using this in node.js, have a look at the tests. Here is a simple example on
+how to generate a new key and use it to encrypt/decrypt a message.
+
+    var rsa = require("bigint");
+    var key = new rsa.Key();
+
+    var message = "All your bases are belong to us.";
+    console.log("Message:\n"+message+"\n");
+
+    // Generate a key
+    key.generate(1024, "10001");
+    console.log("Key:\n");
+    console.log("n:" + key.n.toString(16));
+    console.log("e:" + key.e.toString(16));
+    console.log("d:" + key.d.toString(16));
+    console.log("\n");
+
+    // Encrypt
+    var encrypted = key.encrypt(message);
+    console.log("Encrypted:\n" + rsa.linebrk(encrypted, 64) + "\n" );
+
+    // Decrypt
+    var decrypted = key.decrypt(encrypted);
+    console.log("Decrypted:" + rsa.linebrk(decrypted, 64) + "\n");
+
+Documentation
+-------------
+
+The original documentation is available at <http://www-cs-students.stanford.edu/~tjw/jsbn/>.
+
+
+License
+-------
+
+Copyright (c) 2003-2005  Tom Wu
+All Rights Reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS-IS" AND WITHOUT WARRANTY OF ANY KIND, 
+EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY 
+WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  
+
+IN NO EVENT SHALL TOM WU BE LIABLE FOR ANY SPECIAL, INCIDENTAL,
+INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER
+RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF
+THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT
+OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+In addition, the following condition applies:
+
+All redistributions must retain an intact copy of this copyright notice
+and disclaimer.

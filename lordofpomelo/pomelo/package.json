@@ -1,0 +1,143 @@
+{
+  "name": "pomelo",
+  "version": "1.2.0",
+  "private": false,
+  "homepage": "https://github.com/NetEase/pomelo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NetEase/pomelo.git"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "bugs": {
+    "url": "https://github.com/NetEase/pomelo/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/NetEase/pomelo#license"
+    }
+  ],
+  "keywords": [
+    "pomelo",
+    "framework",
+    "game",
+    "web",
+    "realtime",
+    "server"
+  ],
+  "dependencies": {
+    "socket.io": "0.9.16",
+    "async": "0.2.5",
+    "seq-queue": "0.0.5",
+    "crc": "0.2.0",
+    "cliff": "0.1.8",
+    "mkdirp": "0.3.3",
+    "pomelo-loader": "0.0.6",
+    "pomelo-rpc": "0.4.10",
+    "pomelo-protocol": "0.1.6",
+    "pomelo-admin": "0.4.5",
+    "pomelo-logger": "0.1.7",
+    "pomelo-scheduler": "0.3.9",
+    "ws": "0.4.25",
+    "pomelo-protobuf": "0.4.0",
+    "node-bignumber": "1.2.1",
+    "commander": "2.0.0",
+    "mqtt": "0.3.9"
+  },
+  "bin": {
+    "pomelo": "./bin/pomelo"
+  },
+  "devDependencies": {
+    "should": "3.3.1",
+    "mocha": ">=0.0.1",
+    "socket.io-client": "0.9.16",
+    "muk": ">=0.0.1",
+    "grunt": "~0.4.2",
+    "grunt-mocha-test": "0.8.x",
+    "grunt-contrib-clean": "0.5.x",
+    "grunt-contrib-jshint": "~0.8.0",
+    "blanket": "~1.1.6"
+  },
+  "contributors": [
+    {
+      "name": "* Charlie Crane",
+      "email": "xieccy@gmail.com"
+    },
+    {
+      "name": "* Chang chang",
+      "email": "changchang005@gmail.com"
+    },
+    {
+      "name": "* piaohai",
+      "email": "piaohai@gmail.com"
+    },
+    {
+      "name": "* py8765",
+      "email": "pengyang633@126.com"
+    },
+    {
+      "name": "* Demon",
+      "email": "zhhang0925@gmail.com"
+    },
+    {
+      "name": "* numbcoder",
+      "email": "wzhao23@gmail.com"
+    },
+    {
+      "name": "* halfblood",
+      "email": "halfblood369@gmail.com"
+    }
+  ],
+  "gitHead": "b73602b9bb0b5a34dde130a2d24e3d3e1c6074c6",
+  "description": "Pomelo is a fast, scalable game server framework for [node.js](http://nodejs.org). It provides the basic development framework and many related components, including libraries and tools. Pomelo is also suitable for real-time web applications; its distribu",
+  "_id": "pomelo@1.2.0",
+  "_shasum": "d89ca5c54457e37216c26405d7fa3ac42f445364",
+  "_from": "pomelo@1.2.0",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "py8765",
+    "email": "pengyang633@126.com"
+  },
+  "maintainers": [
+    {
+      "name": "halfblood369",
+      "email": "lwj19861218@163.com"
+    },
+    {
+      "name": "xieccy",
+      "email": "xieccy@gmail.com"
+    },
+    {
+      "name": "changchang",
+      "email": "changchang005@gmail.com"
+    },
+    {
+      "name": "piaohai",
+      "email": "piaohai@gmail.com"
+    },
+    {
+      "name": "py8765",
+      "email": "pengyang633@126.com"
+    },
+    {
+      "name": "fantasyni",
+      "email": "fantasyni@163.com"
+    },
+    {
+      "name": "palmtoy",
+      "email": "zgli@corp.netease.com"
+    },
+    {
+      "name": "cynron",
+      "email": "wang.xy.chn@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "d89ca5c54457e37216c26405d7fa3ac42f445364",
+    "tarball": "http://registry.npmjs.org/pomelo/-/pomelo-1.2.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/pomelo/-/pomelo-1.2.0.tgz"
+}

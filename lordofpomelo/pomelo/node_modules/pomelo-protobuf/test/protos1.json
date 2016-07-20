@@ -1,0 +1,561 @@
+{
+  "lv": {
+    "s": {
+      "option": "repeated",
+      "type": "LevelUpMessage",
+      "tag": 1
+    },
+    "__messages": {
+      "LevelUpMessage": {
+        "userid": {
+          "option": "required",
+          "type": "string",
+          "tag": 1
+        },
+        "delta_xp": {
+          "option": "required",
+          "type": "int32",
+          "tag": 2
+        },
+        "level": {
+          "option": "required",
+          "type": "int32",
+          "tag": 3
+        },
+        "level_up": {
+          "option": "required",
+          "type": "int32",
+          "tag": 4
+        },
+        "__messages": {},
+        "__tags": {
+          "1": "userid",
+          "2": "delta_xp",
+          "3": "level",
+          "4": "level_up"
+        }
+      }
+    },
+    "__tags": {
+      "1": "s"
+    }
+  },
+  "ls": {
+    "s": {
+      "option": "required",
+      "type": "MS",
+      "tag": 1
+    },
+    "__messages": {
+      "MS": {
+        "events": {
+          "option": "repeated",
+          "type": "Event",
+          "tag": 1
+        },
+        "status": {
+          "option": "optional",
+          "type": "Status",
+          "tag": 2
+        },
+        "__messages": {
+          "Status": {
+            "status": {
+              "option": "required",
+              "type": "int32",
+              "tag": 1
+            },
+            "max_player": {
+              "option": "required",
+              "type": "int32",
+              "tag": 2
+            },
+            "big_blind": {
+              "option": "required",
+              "type": "int32",
+              "tag": 3
+            },
+            "max_cash": {
+              "option": "required",
+              "type": "int32",
+              "tag": 4
+            },
+            "buy_in": {
+              "option": "required",
+              "type": "int32",
+              "tag": 5
+            },
+            "is_sit_and_go": {
+              "option": "required",
+              "type": "int32",
+              "tag": 6
+            },
+            "dealerindex": {
+              "option": "required",
+              "type": "int32",
+              "tag": 7
+            },
+            "index": {
+              "option": "required",
+              "type": "int32",
+              "tag": 8
+            },
+            "turnNumber": {
+              "option": "required",
+              "type": "int32",
+              "tag": 9
+            },
+            "bet": {
+              "option": "required",
+              "type": "int32",
+              "tag": 10
+            },
+            "min_bet": {
+              "option": "required",
+              "type": "int32",
+              "tag": 11
+            },
+            "this_turn_start_index": {
+              "option": "required",
+              "type": "int32",
+              "tag": 12
+            },
+            "table_cards": {
+              "option": "repeated",
+              "type": "int32",
+              "tag": 13
+            },
+            "potindex": {
+              "option": "required",
+              "type": "int32",
+              "tag": 14
+            },
+            "pots": {
+              "option": "repeated",
+              "type": "Pot",
+              "tag": 15
+            },
+            "userdec": {
+              "option": "repeated",
+              "type": "Player",
+              "tag": 16
+            },
+            "animation_time": {
+              "option": "required",
+              "type": "int32",
+              "tag": 17
+            },
+            "speed": {
+              "option": "required",
+              "type": "int32",
+              "tag": 18
+            },
+            "__messages": {
+              "Pot": {
+                "cash": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 1
+                },
+                "winner": {
+                  "option": "repeated",
+                  "type": "Winner",
+                  "tag": 2
+                },
+                "userinpot": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 3
+                },
+                "__messages": {
+                  "Winner": {
+                    "userid": {
+                      "option": "optional",
+                      "type": "string",
+                      "tag": 6
+                    },
+                    "hand": {
+                      "option": "optional",
+                      "type": "int32",
+                      "tag": 7
+                    },
+                    "pokers": {
+                      "option": "repeated",
+                      "type": "int32",
+                      "tag": 8
+                    },
+                    "__messages": {},
+                    "__tags": {
+                      "6": "userid",
+                      "7": "hand",
+                      "8": "pokers"
+                    }
+                  }
+                },
+                "__tags": {
+                  "1": "cash",
+                  "2": "winner",
+                  "3": "userinpot"
+                }
+              },
+              "Player": {
+                "userid": {
+                  "option": "optional",
+                  "type": "string",
+                  "tag": 1
+                },
+                "username": {
+                  "option": "optional",
+                  "type": "string",
+                  "tag": 2
+                },
+                "isstandup": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 3
+                },
+                "level": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 4
+                },
+                "canplay": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 5
+                },
+                "isplay": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 6
+                },
+                "is_on_table": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 7
+                },
+                "isallin": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 8
+                },
+                "card1": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 9
+                },
+                "card2": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 10
+                },
+                "turn": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 11
+                },
+                "bet": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 12
+                },
+                "money": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 13
+                },
+                "chair_index": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 14
+                },
+                "avatar_index": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 15
+                },
+                "chipcount": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 16
+                },
+                "action": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 17
+                },
+                "gift": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 18
+                },
+                "__messages": {},
+                "__tags": {
+                  "1": "userid",
+                  "2": "username",
+                  "3": "isstandup",
+                  "4": "level",
+                  "5": "canplay",
+                  "6": "isplay",
+                  "7": "is_on_table",
+                  "8": "isallin",
+                  "9": "card1",
+                  "10": "card2",
+                  "11": "turn",
+                  "12": "bet",
+                  "13": "money",
+                  "14": "chair_index",
+                  "15": "avatar_index",
+                  "16": "chipcount",
+                  "17": "action",
+                  "18": "gift"
+                }
+              }
+            },
+            "__tags": {
+              "1": "status",
+              "2": "max_player",
+              "3": "big_blind",
+              "4": "max_cash",
+              "5": "buy_in",
+              "6": "is_sit_and_go",
+              "7": "dealerindex",
+              "8": "index",
+              "9": "turnNumber",
+              "10": "bet",
+              "11": "min_bet",
+              "12": "this_turn_start_index",
+              "13": "table_cards",
+              "14": "potindex",
+              "15": "pots",
+              "16": "userdec",
+              "17": "animation_time",
+              "18": "speed"
+            }
+          },
+          "Event": {
+            "id": {
+              "option": "optional",
+              "type": "int32",
+              "tag": 1
+            },
+            "user": {
+              "option": "optional",
+              "type": "Player1",
+              "tag": 2
+            },
+            "chair_index": {
+              "option": "optional",
+              "type": "int32",
+              "tag": 3
+            },
+            "bet": {
+              "option": "repeated",
+              "type": "Bet",
+              "tag": 4
+            },
+            "small_bet": {
+              "option": "optional",
+              "type": "int32",
+              "tag": 5
+            },
+            "user_id": {
+              "option": "optional",
+              "type": "string",
+              "tag": 6
+            },
+            "card1": {
+              "option": "optional",
+              "type": "int32",
+              "tag": 7
+            },
+            "card2": {
+              "option": "optional",
+              "type": "int32",
+              "tag": 8
+            },
+            "rank": {
+              "option": "optional",
+              "type": "int32",
+              "tag": 9
+            },
+            "chips": {
+              "option": "optional",
+              "type": "int32",
+              "tag": 10
+            },
+            "showhand": {
+              "option": "repeated",
+              "type": "string",
+              "tag": 11
+            },
+            "friendid": {
+              "option": "optional",
+              "type": "string",
+              "tag": 12
+            },
+            "giftid": {
+              "option": "optional",
+              "type": "int32",
+              "tag": 13
+            },
+            "__messages": {
+              "Player1": {
+                "userid": {
+                  "option": "required",
+                  "type": "string",
+                  "tag": 1
+                },
+                "username": {
+                  "option": "required",
+                  "type": "string",
+                  "tag": 2
+                },
+                "isstandup": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 3
+                },
+                "level": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 4
+                },
+                "canplay": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 5
+                },
+                "isplay": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 6
+                },
+                "is_on_table": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 7
+                },
+                "isallin": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 8
+                },
+                "card1": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 9
+                },
+                "card2": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 10
+                },
+                "turn": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 11
+                },
+                "bet": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 12
+                },
+                "money": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 13
+                },
+                "chair_index": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 14
+                },
+                "avatar_index": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 15
+                },
+                "chipcount": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 16
+                },
+                "action": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 17
+                },
+                "gift": {
+                  "option": "optional",
+                  "type": "int32",
+                  "tag": 18
+                },
+                "__messages": {},
+                "__tags": {
+                  "1": "userid",
+                  "2": "username",
+                  "3": "isstandup",
+                  "4": "level",
+                  "5": "canplay",
+                  "6": "isplay",
+                  "7": "is_on_table",
+                  "8": "isallin",
+                  "9": "card1",
+                  "10": "card2",
+                  "11": "turn",
+                  "12": "bet",
+                  "13": "money",
+                  "14": "chair_index",
+                  "15": "avatar_index",
+                  "16": "chipcount",
+                  "17": "action",
+                  "18": "gift"
+                }
+              },
+              "Bet": {
+                "chair_index": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 1
+                },
+                "bet": {
+                  "option": "required",
+                  "type": "int32",
+                  "tag": 2
+                },
+                "__messages": {},
+                "__tags": {
+                  "1": "chair_index",
+                  "2": "bet"
+                }
+              }
+            },
+            "__tags": {
+              "1": "id",
+              "2": "user",
+              "3": "chair_index",
+              "4": "bet",
+              "5": "small_bet",
+              "6": "user_id",
+              "7": "card1",
+              "8": "card2",
+              "9": "rank",
+              "10": "chips",
+              "11": "showhand",
+              "12": "friendid",
+              "13": "giftid"
+            }
+          }
+        },
+        "__tags": {
+          "1": "events",
+          "2": "status"
+        }
+      }
+    },
+    "__tags": {
+      "1": "s"
+    }
+  }
+}

@@ -1,0 +1,1634 @@
+ 
+  ♢ log4js categoryFilter 
+  
+  appender
+    ✓ should only pass matching category
+  configure tmp-tests.log
+    ✓ should contain all log messages
+  configure tmp-tests-web.log
+    ✓ should contain only error and warning log messages
+  
+  ♢ log4js cluster appender 
+  
+  when in master mode
+    ✓ should register 'fork' event listener on 'cluster'
+    ✓ should log using actual appender
+  when in worker mode
+    ✓ worker appender should call process.send
+    ✓ worker should serialize an Error correctly
+  
+  ♢ log4js configure 
+  
+  appenders when specified by type
+    ✓ should load appender
+    ✓ should pass config to appender
+    ✓ should pass log4js options to appender
+  appenders when core appender loaded via loadAppender
+    ✓ should load appender from ../lib/appenders
+    ✓ should add appender configure function to appenderMakers
+  appenders when appender in node_modules loaded via loadAppender
+    ✓ should load appender via require
+    ✓ should add appender configure function to appenderMakers
+  appenders when appender object loaded via loadAppender
+    ✓ should load appender with provided object
+    ✓ should add appender configure function to appenderMakers
+  appenders when configuration file loaded via LOG4JS_CONFIG environment variable
+    ✓ should load the specified local configuration file
+  
+  ♢ log4js.configure(), with or without a "levels" property 
+  
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Trace with isLevelEnabled(Trace)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Trace with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Trace with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Trace with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Trace with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Trace with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Debug with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Debug with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Debug with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Debug with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Debug with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Debug with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Info with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Info with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Info with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Info with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Info with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Info with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Warn with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Warn with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Warn with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Warn with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Warn with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Warn with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Error with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Error with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Error with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Error with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Error with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Error with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Fatal with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Fatal with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Fatal with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Fatal with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Fatal with isLevelEnabled(Error)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then NOT setting a configuration, and checking the logger whose level was set to Fatal with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Trace with isLevelEnabled(Trace)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Trace with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Trace with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Trace with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Trace with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Trace with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Debug with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Debug with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Debug with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Debug with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Debug with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Debug with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Info with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Info with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Info with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Info with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Info with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Info with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Warn with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Warn with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Warn with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Warn with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Warn with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Warn with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Error with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Error with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Error with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Error with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Error with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Error with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Fatal with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Fatal with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Fatal with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Fatal with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Fatal with isLevelEnabled(Error)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is undefined, and checking the logger whose level was set to Fatal with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Trace with isLevelEnabled(Trace)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Trace with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Trace with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Trace with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Trace with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Trace with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Debug with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Debug with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Debug with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Debug with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Debug with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Debug with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Info with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Info with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Info with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Info with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Info with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Info with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Warn with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Warn with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Warn with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Warn with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Warn with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Warn with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Error with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Error with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Error with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Error with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Error with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Error with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Fatal with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Fatal with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Fatal with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Fatal with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Fatal with isLevelEnabled(Error)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is null, and checking the logger whose level was set to Fatal with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Trace with isLevelEnabled(Trace)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Trace with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Trace with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Trace with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Trace with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Trace with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Debug with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Debug with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Debug with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Debug with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Debug with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Debug with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Info with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Info with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Info with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Info with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Info with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Info with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Warn with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Warn with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Warn with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Warn with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Warn with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Warn with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Error with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Error with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Error with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Error with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Error with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Error with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Fatal with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Fatal with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Fatal with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Fatal with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Fatal with isLevelEnabled(Error)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which is empty, and checking the logger whose level was set to Fatal with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Trace with isLevelEnabled(Trace)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Trace with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Trace with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Trace with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Trace with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Trace with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Debug with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Debug with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Debug with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Debug with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Debug with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Debug with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Info with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Info with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Info with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Info with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Info with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Info with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Warn with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Warn with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Warn with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Warn with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Warn with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Warn with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Error with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Error with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Error with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Error with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Error with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Error with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Error)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has no levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Trace with isLevelEnabled(Trace)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Trace with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Trace with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Trace with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Trace with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Trace with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Debug with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Debug with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Debug with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Debug with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Debug with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Debug with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Info with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Info with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Info with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Info with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Info with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Info with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Warn with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Warn with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Warn with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Warn with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Warn with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Warn with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Error with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Error with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Error with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Error with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Error with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Error with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Error)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has null levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Trace with isLevelEnabled(Trace)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Trace with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Trace with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Trace with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Trace with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Trace with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Debug with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Debug with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Debug with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Debug with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Debug with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Debug with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Info with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Info with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Info with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Info with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Info with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Info with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Warn with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Warn with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Warn with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Warn with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Warn with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Warn with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Error with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Error with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Error with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Error with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Error with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Error with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Error)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has empty levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Trace with isLevelEnabled(Trace)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Trace with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Trace with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Trace with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Trace with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Trace with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Debug with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Debug with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Debug with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Debug with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Debug with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Debug with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Info with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Info with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Info with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Info with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Info with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Info with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Warn with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Warn with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Warn with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Warn with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Warn with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Warn with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Error with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Error with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Error with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Error with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Error with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Error with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Error)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has random levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Trace with isLevelEnabled(Trace)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Trace with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Trace with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Trace with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Trace with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Trace with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Debug with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Debug with isLevelEnabled(Debug)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Debug with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Debug with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Debug with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Debug with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Info with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Info with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Info with isLevelEnabled(Info)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Info with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Info with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Info with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Warn with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Warn with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Warn with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Warn with isLevelEnabled(Warn)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Warn with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Warn with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Error with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Error with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Error with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Error with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Error with isLevelEnabled(Error)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Error with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Trace)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Debug)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Info)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Warn)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Error)
+    ✓ should return false
+    ✓ finally checking for comparison mismatch with log4js
+  Setting up loggers with initial levels, then setting a configuration which has some valid levels, and checking the logger whose level was set to Fatal with isLevelEnabled(Fatal)
+    ✓ should return true
+    ✓ finally checking for comparison mismatch with log4js
+  
+  ♢ log4js connect logger 
+  
+  getConnectLoggerModule
+    ✓ should return a "connect logger" factory
+  getConnectLoggerModule take a log4js logger and return a "connect logger"
+    ✓ should return a "connect logger"
+  getConnectLoggerModule log events with level below logging level
+    ✓ check message
+  getConnectLoggerModule log events
+    ✓ check message
+  getConnectLoggerModule log events with non-default level and custom format
+    ✓ check message
+  getConnectLoggerModule logger with options as string
+    ✓ should use the passed in format
+  getConnectLoggerModule auto log levels
+    ✓ should use INFO for 2xx
+    ✓ should use WARN for 3xx
+    ✓ should use ERROR for 4xx
+    ✓ should use ERROR for 5xx
+  getConnectLoggerModule format using a function
+    ✓ should call the format function
+  getConnectLoggerModule format that includes request headers
+    ✓ should output the request header
+  getConnectLoggerModule format that includes response headers
+    ✓ should output the response header
+  getConnectLoggerModule log events with custom token
+    ✓ check message
+  getConnectLoggerModule log events with custom override token
+    ✓ check message
+  
+  ♢ ../lib/appenders/console 
+  
+  appender
+    ✓ should output to console
+  
+  ♢ ../lib/appenders/dateFile 
+  
+  appender adding multiple dateFileAppenders
+    ✓ should only add one exit listener
+  appender exit listener
+    ✓ should close all open files
+  appender with default settings
+    ✓ should write to the file
+    ✓ should use the basic layout
+  configure with cwd option
+    ✓ should prepend options.cwd to config.filename
+  configure with dateFileAppender
+    ✓ should load appender configuration from a json file
+  configure with options.alwaysIncludePattern
+    ✓ should create file with the correct pattern
+    ✓ should not overwrite the file on open (bug found in issue #132)
+  
+  ♢ date_format 
+  
+  Date extensions
+    ✓ should format a date as string using a pattern
+    ✓ should default to the ISO8601 format
+    ✓ should provide a ISO8601 with timezone offset format
+    ✓ should provide a just-the-time format
+    ✓ should provide a custom format
+  
+  ♢ ../lib/debug 
+  
+  when NODE_DEBUG is set to log4js
+    ✓ it should log to console.error
+  when NODE_DEBUG is set to not log4js
+    ✓ it should not log to console.error
+  when NODE_DEBUG is not set
+    ✓ it should not log to console.error
+  
+  ♢ log4js fileAppender 
+  
+  adding multiple fileAppenders
+    ✓ does not add more than one exit listeners
+  exit listener
+    ✓ should close all open files
+  with default fileAppender settings
+    ✓ should write log messages to the file
+    ✓ log messages should be in the basic layout format
+  with a max file size and no backups
+    ✓ log file should only contain the second message
+  with a max file size and no backups the number of files
+    ✓ starting with the test file name should be two
+  with a max file size and 2 backups the log files
+    ✓ should be 3
+    ✓ should be named in sequence
+  with a max file size and 2 backups the log files and the contents of the second file
+    ✓ should be the third log message
+  with a max file size and 2 backups the log files and the contents of the third file
+    ✓ should be the second log message
+  with a max file size and 2 backups the log files and the contents of the first file
+    ✓ should be the last log message
+  with a max file size and 2 compressed backups the log files
+    ✓ should be 3
+    ✓ should be named in sequence
+  with a max file size and 2 compressed backups the log files and the contents of the second file
+    ✓ should be the third log message
+  with a max file size and 2 compressed backups the log files and the contents of the third file
+    ✓ should be the second log message
+  with a max file size and 2 compressed backups the log files and the contents of the first file
+    ✓ should be the last log message
+  fileAppender subcategories
+    ✓ check file contents
+  configure with fileAppender
+    ✓ should load appender configuration from a json file
+  when underlying stream errors
+    ✓ should log the error to console.error
+  
+  ♢ log4js fileSyncAppender 
+  
+  with a max file size and 2 backups the log files
+    ✓ should be 3
+    ✓ should be named in sequence
+  with default fileSyncAppender settings
+    ✓ should write log messages to the file
+    ✓ log messages should be in the basic layout format
+  with a max file size and no backups
+    ✓ log file should only contain the second message
+  with a max file size and 2 backups the log files and the contents of the first file
+    ✓ should be the last log message
+  with a max file size and 2 backups the log files and the contents of the second file
+    ✓ should be the third log message
+  with a max file size and no backups the number of files
+    ✓ starting with the test file name should be two
+  with a max file size and 2 backups the log files and the contents of the third file
+    ✓ should be the second log message
+  configure with fileSyncAppender
+    ✓ should load appender configuration from a json file
+  
+  ♢ log4js gelfAppender 
+  
+  on process.exit
+    ✓ should close open sockets
+  on zlib error
+    ✓ should output to console.error
+  with layout in configuration
+    ✓ should pass options to layout
+  with default gelfAppender settings the dgram packet
+    ✓ should be sent via udp to the localhost gelf server
+    ✓ should be compressed
+  with default gelfAppender settings the uncompressed log message
+    ✓ should be in the gelf format
+  with a message longer than 8k the dgram packet
+    ✓ should not be sent
+  with non-default options the dgram packet
+    ✓ should pick up the options
+  with non-default options the uncompressed packet
+    ✓ should pick up the options
+  with custom fields options the dgram packet
+    ✓ should pick up the options
+  with custom fields options the uncompressed packet
+    ✓ should pick up the options
+  
+  ♢ log4js global loglevel 
+  
+  global loglevel
+    ✓ set global loglevel on creation
+    ✓ global change loglevel
+    ✓ override loglevel
+    ✓ preload loglevel
+    ✓ set level on all categories
+  
+  ♢ log4js layouts 
+  
+  colouredLayout
+    ✓ should apply level colour codes to output
+    ✓ should support the console.log format for the message
+  messagePassThroughLayout
+    ✓ should take a logevent and output only the message
+    ✓ should support the console.log format for the message
+    ✓ should output the first item even if it is not a string
+    ✓ should print the stacks of a passed error objects
+  basicLayout
+    ✓ should take a logevent and output a formatted string
+    ✓ should output a stacktrace, message if the event has an error attached
+    ✓ should output any extra data in the log event as util.inspect strings
+  patternLayout
+    ✓ should default to "time logLevel loggerName - message"
+    ✓ %r should output time only
+    ✓ %p should output the log level
+    ✓ %c should output the log category
+    ✓ %m should output the log data
+    ✓ %n should output a new line
+    ✓ %h should output hostname
+    ✓ %z should output pid
+    ✓ %c should handle category names like java-style package names
+    ✓ %d should output the date in ISO8601 format
+    ✓ %d should allow for format specification
+    ✓ %% should output %
+    ✓ should output anything not preceded by % as literal
+    ✓ should output the original string if no replacer matches the token
+    ✓ should handle complicated patterns
+    ✓ should truncate fields if specified
+    ✓ should pad fields if specified
+    ✓ %[%r%] should output colored time
+    ✓ %x{testString} should output the string stored in tokens
+    ✓ %x{testFunction} should output the result of the function stored in tokens
+    ✓ %x{doesNotExist} should output the string stored in tokens
+    ✓ %x{fnThatUsesLogEvent} should be able to use the logEvent
+    ✓ %x should output the string stored in tokens
+  layout makers
+    ✓ should have a maker for each layout
+  messagePassThroughLayout with passed augmented errors
+    ✓ should print error the contained error message
+    ✓ should print error augmented string attributes
+    ✓ should print error augmented object attributes
+  
+  ♢ levels 
+  
+  values
+    ✓ should define some levels
+  isGreaterThanOrEqualTo
+    ✓ should handle string arguments
+  isLessThanOrEqualTo
+    ✓ should handle string arguments
+  isEqualTo
+    ✓ should handle string arguments
+  values ALL
+    ✓ should be less than the other levels
+    ✓ should be greater than no levels
+    ✓ should only be equal to ALL
+  values TRACE
+    ✓ should be less than DEBUG
+    ✓ should be greater than ALL
+    ✓ should only be equal to TRACE
+  values DEBUG
+    ✓ should be less than INFO
+    ✓ should be greater than TRACE
+    ✓ should only be equal to DEBUG
+  values INFO
+    ✓ should be less than WARN
+    ✓ should be greater than DEBUG
+    ✓ should only be equal to INFO
+  values WARN
+    ✓ should be less than ERROR
+    ✓ should be greater than INFO
+    ✓ should only be equal to WARN
+  values ERROR
+    ✓ should be less than FATAL
+    ✓ should be greater than WARN
+    ✓ should only be equal to ERROR
+  values FATAL
+    ✓ should be less than OFF
+    ✓ should be greater than ERROR
+    ✓ should only be equal to FATAL
+  values MARK
+    ✓ should be less than OFF
+    ✓ should be greater than FATAL
+    ✓ should only be equal to MARK
+  values OFF
+    ✓ should not be less than anything
+    ✓ should be greater than everything
+    ✓ should only be equal to OFF
+  toLevel with lowercase argument
+    ✓ should take the string and return the corresponding level
+  toLevel with uppercase argument
+    ✓ should take the string and return the corresponding level
+  toLevel with varying case
+    ✓ should take the string and return the corresponding level
+  toLevel with unrecognised argument
+    ✓ should return undefined
+  toLevel with unrecognised argument and default value
+    ✓ should return default value
+  
+  ♢ log4js-abspath 
+  
+  options
+    ✓ should be passed to appenders during configuration
+  file appender
+    ✓ should prepend options.cwd to config.filename
+  
+  ♢ log4js logLevelFilter 
+  
+  appender
+    ✓ should only pass log events greater than or equal to its own level
+  configure tmp-tests.log
+    ✓ should contain all log messages
+  configure tmp-tests-warnings.log
+    ✓ should contain only error and warning log messages
+  configure tmp-tests-debugs.log
+    ✓ should contain only trace and debug log messages
+  
+  ♢ ../lib/logger 
+  
+  constructor with no parameters
+    ✓ should use default category
+    ✓ should use TRACE log level
+  constructor with category
+    ✓ should use category
+    ✓ should use TRACE log level
+  constructor with category and level
+    ✓ should use category
+    ✓ should use level
+  isLevelEnabled
+    ✓ should provide a level enabled function for all levels
+    ✓ should return the right values
+  should emit log events
+    ✓ when log writes are enabled
+    ✓ but not when log writes are disabled
+  
+  ♢ log4js 
+  
+  getBufferedLogger
+    ✓ should take a category and return a logger
+  getLogger
+    ✓ should take a category and return a logger
+  when shutdown is called
+    ✓ should invoke appender shutdowns
+    ✓ should call callback
+  invalid configuration
+    ✓ should throw an exception
+  configuration when passed as object
+    ✓ should be passed to appender config
+  configuration that causes an error
+    ✓ should wrap error in a meaningful message
+  configuration when passed as filename
+    ✓ should read the config from a file
+    ✓ should pass config to appender
+  with no appenders defined
+    ✓ should default to the console appender
+  default setup
+    ✓ should configure a console appender
+    ✓ should not replace console.log with log4js version
+  configuration persistence
+    ✓ should maintain appenders between requires
+  getDefaultLogger
+    ✓ should return a logger
+  getBufferedLogger cache events
+    ✓ should not emit log events if .flush() is not called.
+  getBufferedLogger log events after flush() is called
+    ✓ should emit log events when .flush() is called.
+  getLogger log events
+    ✓ should emit log events
+    ✓ should not emit events of a lower level
+    ✓ should include the error if passed in
+  addAppender without a category
+    ✓ should register the function as a listener for all loggers
+  addAppender with a category
+    ✓ should only register the function as a listener for that category
+  addAppender with multiple categories
+    ✓ should register the function as a listener for all the categories
+    ✓ should register the function when the list of categories is an array
+  console when replaceConsole called
+    ✓ should replace console.log methods with log4js ones
+  console when turned off
+    ✓ should call the original console methods
+  console configuration when disabled
+    ✓ should allow for turning off console replacement
+  console configuration when enabled
+    ✓ should allow for turning on console replacement
+  addAppender without a category if an appender for a category is defined
+    ✓ should register for that category
+  
+  ♢ log4js logglyAppender 
+  
+  minimal config
+    ✓ there should be one message only
+  
+  ♢ logstashUDP appender 
+  
+  when logging with logstash via UDP
+    ✓ an UDP packet should be sent
+  when missing some options
+    ✓ it sets some defaults
+  
+  ♢ Multiprocess Appender 
+  
+  worker
+    ✓ should open a socket to the loggerPort and loggerHost
+    ✓ should buffer messages written before socket is connected
+    ✓ should write log messages to socket as json strings with a terminator string
+    ✓ should attempt to re-open the socket on error
+    ✓ should serialize an Error correctly
+  worker with timeout
+    ✓ should attempt to re-open the socket
+  worker defaults
+    ✓ should open a socket to localhost:5000
+  master
+    ✓ should listen for log messages on loggerPort and loggerHost
+    ✓ should return the underlying appender
+  master defaults
+    ✓ should listen for log messages on localhost:5000
+  master when a client connects
+    ✓ should parse log messages into log events and send to appender
+    ✓ should parse log messages split into multiple chunks
+    ✓ should parse multiple log messages in a single chunk
+    ✓ should handle log messages sent as part of end event
+    ✓ should handle unparseable log messages
+  configure
+    ✓ should load underlying appender for master
+    ✓ should pass config to underlying appender
+    ✓ should pass options to underlying appender
+  
+  ♢ log4js connect logger 
+  
+  getConnectLoggerModule
+    ✓ should return a "connect logger" factory
+  getConnectLoggerModule nolog String check unmatch url request
+    ✓ check message
+  getConnectLoggerModule nolog String check match url request
+    ✓ check message
+  getConnectLoggerModule nolog Strings check unmatch url request (png)
+    ✓ check message
+  getConnectLoggerModule nolog Strings check match url request (gif)
+    ✓ check message
+  getConnectLoggerModule nolog Strings check match url request (jpeg)
+    ✓ check message
+  getConnectLoggerModule nolog Array<String> check unmatch url request (png)
+    ✓ check message
+  getConnectLoggerModule nolog Array<String> check match url request (gif)
+    ✓ check message
+  getConnectLoggerModule nolog Array<String> check match url request (jpeg)
+    ✓ check message
+  getConnectLoggerModule nolog RegExp check unmatch url request (png)
+    ✓ check message
+  getConnectLoggerModule nolog RegExp check match url request (gif)
+    ✓ check message
+  getConnectLoggerModule nolog RegExp check match url request (jpeg)
+    ✓ check message
+  
+  ♢ reload configuration 
+  
+  with config file changing
+    ✓ should configure log4js from first log4js.json found
+  with config file staying the same
+    ✓ should only read the configuration file once
+    ✓ should configure log4js from first log4js.json found
+  when config file is removed
+    ✓ should only read the configuration file once
+    ✓ should not clear configuration when config file not found
+  when passed an object
+    ✓ should log a warning
+  when called twice with reload options
+    ✓ should clear the previous interval
+  
+  ♢ log4js setLevel asymmetry fix 
+  
+  setLevel is called with a string of Trace
+    ✓ isLevelEnabled(Trace) called with a string should return true
+    ✓ isLevelEnabled(Debug) called with a string should return true
+    ✓ isLevelEnabled(Info) called with a string should return true
+    ✓ isLevelEnabled(Warn) called with a string should return true
+    ✓ isLevelEnabled(Error) called with a string should return true
+    ✓ isLevelEnabled(Fatal) called with a string should return true
+    ✓ isLevelEnabled(TRACE) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(DEBUG) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(INFO) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(WARN) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(ERROR) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(FATAL) called with a log4js.levels.level should return true
+  setLevel is called with a string of Debug
+    ✓ isLevelEnabled(Trace) called with a string should return false
+    ✓ isLevelEnabled(Debug) called with a string should return true
+    ✓ isLevelEnabled(Info) called with a string should return true
+    ✓ isLevelEnabled(Warn) called with a string should return true
+    ✓ isLevelEnabled(Error) called with a string should return true
+    ✓ isLevelEnabled(Fatal) called with a string should return true
+    ✓ isLevelEnabled(TRACE) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(DEBUG) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(INFO) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(WARN) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(ERROR) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(FATAL) called with a log4js.levels.level should return true
+  setLevel is called with a string of Info
+    ✓ isLevelEnabled(Trace) called with a string should return false
+    ✓ isLevelEnabled(Debug) called with a string should return false
+    ✓ isLevelEnabled(Info) called with a string should return true
+    ✓ isLevelEnabled(Warn) called with a string should return true
+    ✓ isLevelEnabled(Error) called with a string should return true
+    ✓ isLevelEnabled(Fatal) called with a string should return true
+    ✓ isLevelEnabled(TRACE) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(DEBUG) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(INFO) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(WARN) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(ERROR) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(FATAL) called with a log4js.levels.level should return true
+  setLevel is called with a string of Warn
+    ✓ isLevelEnabled(Trace) called with a string should return false
+    ✓ isLevelEnabled(Debug) called with a string should return false
+    ✓ isLevelEnabled(Info) called with a string should return false
+    ✓ isLevelEnabled(Warn) called with a string should return true
+    ✓ isLevelEnabled(Error) called with a string should return true
+    ✓ isLevelEnabled(Fatal) called with a string should return true
+    ✓ isLevelEnabled(TRACE) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(DEBUG) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(INFO) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(WARN) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(ERROR) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(FATAL) called with a log4js.levels.level should return true
+  setLevel is called with a string of Error
+    ✓ isLevelEnabled(Trace) called with a string should return false
+    ✓ isLevelEnabled(Debug) called with a string should return false
+    ✓ isLevelEnabled(Info) called with a string should return false
+    ✓ isLevelEnabled(Warn) called with a string should return false
+    ✓ isLevelEnabled(Error) called with a string should return true
+    ✓ isLevelEnabled(Fatal) called with a string should return true
+    ✓ isLevelEnabled(TRACE) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(DEBUG) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(INFO) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(WARN) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(ERROR) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(FATAL) called with a log4js.levels.level should return true
+  setLevel is called with a string of Fatal
+    ✓ isLevelEnabled(Trace) called with a string should return false
+    ✓ isLevelEnabled(Debug) called with a string should return false
+    ✓ isLevelEnabled(Info) called with a string should return false
+    ✓ isLevelEnabled(Warn) called with a string should return false
+    ✓ isLevelEnabled(Error) called with a string should return false
+    ✓ isLevelEnabled(Fatal) called with a string should return true
+    ✓ isLevelEnabled(TRACE) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(DEBUG) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(INFO) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(WARN) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(ERROR) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(FATAL) called with a log4js.levels.level should return true
+  setLevel is called with a log4js.levels.level of TRACE
+    ✓ isLevelEnabled(Trace) called with a string should return true
+    ✓ isLevelEnabled(Debug) called with a string should return true
+    ✓ isLevelEnabled(Info) called with a string should return true
+    ✓ isLevelEnabled(Warn) called with a string should return true
+    ✓ isLevelEnabled(Error) called with a string should return true
+    ✓ isLevelEnabled(Fatal) called with a string should return true
+    ✓ isLevelEnabled(TRACE) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(DEBUG) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(INFO) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(WARN) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(ERROR) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(FATAL) called with a log4js.levels.level should return true
+  setLevel is called with a log4js.levels.level of DEBUG
+    ✓ isLevelEnabled(Trace) called with a string should return false
+    ✓ isLevelEnabled(Debug) called with a string should return true
+    ✓ isLevelEnabled(Info) called with a string should return true
+    ✓ isLevelEnabled(Warn) called with a string should return true
+    ✓ isLevelEnabled(Error) called with a string should return true
+    ✓ isLevelEnabled(Fatal) called with a string should return true
+    ✓ isLevelEnabled(TRACE) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(DEBUG) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(INFO) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(WARN) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(ERROR) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(FATAL) called with a log4js.levels.level should return true
+  setLevel is called with a log4js.levels.level of INFO
+    ✓ isLevelEnabled(Trace) called with a string should return false
+    ✓ isLevelEnabled(Debug) called with a string should return false
+    ✓ isLevelEnabled(Info) called with a string should return true
+    ✓ isLevelEnabled(Warn) called with a string should return true
+    ✓ isLevelEnabled(Error) called with a string should return true
+    ✓ isLevelEnabled(Fatal) called with a string should return true
+    ✓ isLevelEnabled(TRACE) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(DEBUG) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(INFO) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(WARN) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(ERROR) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(FATAL) called with a log4js.levels.level should return true
+  setLevel is called with a log4js.levels.level of WARN
+    ✓ isLevelEnabled(Trace) called with a string should return false
+    ✓ isLevelEnabled(Debug) called with a string should return false
+    ✓ isLevelEnabled(Info) called with a string should return false
+    ✓ isLevelEnabled(Warn) called with a string should return true
+    ✓ isLevelEnabled(Error) called with a string should return true
+    ✓ isLevelEnabled(Fatal) called with a string should return true
+    ✓ isLevelEnabled(TRACE) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(DEBUG) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(INFO) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(WARN) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(ERROR) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(FATAL) called with a log4js.levels.level should return true
+  setLevel is called with a log4js.levels.level of ERROR
+    ✓ isLevelEnabled(Trace) called with a string should return false
+    ✓ isLevelEnabled(Debug) called with a string should return false
+    ✓ isLevelEnabled(Info) called with a string should return false
+    ✓ isLevelEnabled(Warn) called with a string should return false
+    ✓ isLevelEnabled(Error) called with a string should return true
+    ✓ isLevelEnabled(Fatal) called with a string should return true
+    ✓ isLevelEnabled(TRACE) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(DEBUG) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(INFO) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(WARN) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(ERROR) called with a log4js.levels.level should return true
+    ✓ isLevelEnabled(FATAL) called with a log4js.levels.level should return true
+  setLevel is called with a log4js.levels.level of FATAL
+    ✓ isLevelEnabled(Trace) called with a string should return false
+    ✓ isLevelEnabled(Debug) called with a string should return false
+    ✓ isLevelEnabled(Info) called with a string should return false
+    ✓ isLevelEnabled(Warn) called with a string should return false
+    ✓ isLevelEnabled(Error) called with a string should return false
+    ✓ isLevelEnabled(Fatal) called with a string should return true
+    ✓ isLevelEnabled(TRACE) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(DEBUG) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(INFO) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(WARN) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(ERROR) called with a log4js.levels.level should return false
+    ✓ isLevelEnabled(FATAL) called with a log4js.levels.level should return true
+  
+  ♢ log4js smtpAppender 
+  
+  minimal config
+    ✓ there should be one message only
+    ✓ message should contain proper data
+  fancy config
+    ✓ there should be one message only
+    ✓ message should contain proper data
+  config with layout
+    ✓ should configure layout
+  error when sending email
+    ✓ should be logged to console
+  separate email for each event
+    ✓ there should be three messages
+    ✓ messages should contain proper data
+  multiple events in one email
+    ✓ there should be two messages
+    ✓ messages should contain proper data
+  
+  ♢ subcategories 
+  
+  loggers created after levels configuration is loaded
+    ✓ check logger levels
+  loggers created before levels configuration is loaded
+    ✓ check logger levels
+ 
+✓ OK » 1054 honored (9.069s) 
+  
