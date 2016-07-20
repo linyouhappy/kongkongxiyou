@@ -1,0 +1,1 @@
+config.exchange=[["id","crystal","caoCoin"],["id","crystal","caoCoin"],[1,1,1888],[2,10,16888],[3,50,88888],[4,100,188888]]

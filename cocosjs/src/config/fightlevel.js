@@ -1,0 +1,1 @@
+config.fightlevel=[["level","cost","reward"],["id","cost","reward"],[1,99,150],[2,999,1500],[3,9999,15000],[4,99999,150000]]

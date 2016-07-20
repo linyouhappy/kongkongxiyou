@@ -1,0 +1,1 @@
+config.market=[["id","openTime","closeTime","costRate","timePointDelta","timePointCount","tradeItem"],["id","openTime","closeTime","costRate","timePointDelta","timePointCount","tradeItem"],[1,6,22,2,30,25,"[9001,9002,9003,9004,9005,9006,9007]"]]

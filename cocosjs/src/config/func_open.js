@@ -1,0 +1,1 @@
+config.func_open=[["id","level","functionId"],["id","level","functionId"],[1,10,1],[2,12,2],[3,15,3],[4,16,4],[5,17,5]]
