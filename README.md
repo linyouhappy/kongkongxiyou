@@ -2,6 +2,7 @@
 
 apk和iOS安装包放在百度网盘：http://pan.baidu.com/s/1o8mzthS，过了这个月阿里云服务器将过期。 
 整个项目的源代码和资源均发布在github上：https://github.com/linyouhappy/kongkongxiyou
+国内围墙内用户可以百度网盘下载:http://pan.baidu.com/s/1cxDLBg
 
 现在公布全部源代码，并阐述整个项目的各个开发过程，将从程序、美术、策划三方面进行解析：
 
